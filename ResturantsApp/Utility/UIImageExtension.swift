@@ -10,4 +10,5 @@ import UIKit
 extension UIImage {
     
     static let tabLunch = UIImage(named: "tab_lunch")
+    static let tabInternet = UIImage(named: "tab_internets")
 }

@@ -27,6 +27,7 @@
 		8B43772C29AE23B000312530 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772B29AE23B000312530 /* UIImageExtension.swift */; };
 		8B43772E29AE2B1900312530 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772D29AE2B1900312530 /* UIFontExtension.swift */; };
 		8B43773029AE301700312530 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772F29AE301700312530 /* UIColorExtension.swift */; };
+		8B43773329AE5BE900312530 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43773229AE5BE900312530 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		8B43772B29AE23B000312530 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		8B43772D29AE2B1900312530 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		8B43772F29AE301700312530 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		8B43773229AE5BE900312530 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +187,7 @@
 		8B43772429AD1E0700312530 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8B43772529AD1EFC00312530 /* ResturantMainViewController.swift */,
+				8B43773129AE5BC600312530 /* ViewControllers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +208,15 @@
 				8B43772F29AE301700312530 /* UIColorExtension.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		8B43773129AE5BC600312530 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B43772529AD1EFC00312530 /* ResturantMainViewController.swift */,
+				8B43773229AE5BE900312530 /* WebViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +363,7 @@
 				8B43771929AB895300312530 /* NetworkError.swift in Sources */,
 				8B43771D29ABA87C00312530 /* NetworkService.swift in Sources */,
 				8B43772C29AE23B000312530 /* UIImageExtension.swift in Sources */,
+				8B43773329AE5BE900312530 /* WebViewController.swift in Sources */,
 				8B43772E29AE2B1900312530 /* UIFontExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
