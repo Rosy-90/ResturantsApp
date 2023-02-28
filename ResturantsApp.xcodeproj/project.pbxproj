@@ -21,6 +21,12 @@
 		8B43771B29AB8C6C00312530 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43771A29AB8C6C00312530 /* URLSessionExtension.swift */; };
 		8B43771D29ABA87C00312530 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43771C29ABA87C00312530 /* NetworkService.swift */; };
 		8B43772029ABC25800312530 /* Resturant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43771F29ABC25800312530 /* Resturant.swift */; };
+		8B43772329ABF98400312530 /* ResturantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772229ABF98400312530 /* ResturantsViewModel.swift */; };
+		8B43772629AD1EFC00312530 /* ResturantMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772529AD1EFC00312530 /* ResturantMainViewController.swift */; };
+		8B43772929AE1A2500312530 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772829AE1A2500312530 /* AppCoordinator.swift */; };
+		8B43772C29AE23B000312530 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772B29AE23B000312530 /* UIImageExtension.swift */; };
+		8B43772E29AE2B1900312530 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772D29AE2B1900312530 /* UIFontExtension.swift */; };
+		8B43773029AE301700312530 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43772F29AE301700312530 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		8B43771A29AB8C6C00312530 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		8B43771C29ABA87C00312530 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8B43771F29ABC25800312530 /* Resturant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resturant.swift; sourceTree = "<group>"; };
+		8B43772229ABF98400312530 /* ResturantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantsViewModel.swift; sourceTree = "<group>"; };
+		8B43772529AD1EFC00312530 /* ResturantMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantMainViewController.swift; sourceTree = "<group>"; };
+		8B43772829AE1A2500312530 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8B43772B29AE23B000312530 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		8B43772D29AE2B1900312530 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		8B43772F29AE301700312530 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +121,11 @@
 		8B4376E429AB7E9B00312530 /* ResturantsApp */ = {
 			isa = PBXGroup;
 			children = (
+				8B43772A29AE239700312530 /* Utility */,
 				8B43771E29ABC23600312530 /* Model */,
+				8B43772429AD1E0700312530 /* View */,
+				8B43772129ABF96700312530 /* ViewModel */,
+				8B43772729AE1A0400312530 /* Coordinator */,
 				8B43771529AB880A00312530 /* Service */,
 				8B4376E529AB7E9B00312530 /* AppDelegate.swift */,
 				8B4376E729AB7E9B00312530 /* SceneDelegate.swift */,
@@ -156,6 +172,40 @@
 				8B43771F29ABC25800312530 /* Resturant.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8B43772129ABF96700312530 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B43772229ABF98400312530 /* ResturantsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B43772429AD1E0700312530 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B43772529AD1EFC00312530 /* ResturantMainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B43772729AE1A0400312530 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8B43772829AE1A2500312530 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8B43772A29AE239700312530 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8B43772B29AE23B000312530 /* UIImageExtension.swift */,
+				8B43772D29AE2B1900312530 /* UIFontExtension.swift */,
+				8B43772F29AE301700312530 /* UIColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B43772929AE1A2500312530 /* AppCoordinator.swift in Sources */,
+				8B43773029AE301700312530 /* UIColorExtension.swift in Sources */,
+				8B43772329ABF98400312530 /* ResturantsViewModel.swift in Sources */,
 				8B43771729AB883000312530 /* NetworkURLs.swift in Sources */,
+				8B43772629AD1EFC00312530 /* ResturantMainViewController.swift in Sources */,
 				8B4376EA29AB7E9B00312530 /* ViewController.swift in Sources */,
 				8B43772029ABC25800312530 /* Resturant.swift in Sources */,
 				8B43771B29AB8C6C00312530 /* URLSessionExtension.swift in Sources */,
@@ -297,6 +351,8 @@
 				8B4376E829AB7E9B00312530 /* SceneDelegate.swift in Sources */,
 				8B43771929AB895300312530 /* NetworkError.swift in Sources */,
 				8B43771D29ABA87C00312530 /* NetworkService.swift in Sources */,
+				8B43772C29AE23B000312530 /* UIImageExtension.swift in Sources */,
+				8B43772E29AE2B1900312530 /* UIFontExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
