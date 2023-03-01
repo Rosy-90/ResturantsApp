@@ -8,7 +8,7 @@
 import Foundation
 
 struct ResturantWrapper: Decodable {
-    let resturants: [Resturant]
+    let restaurants: [Resturant]
 }
 
 struct Resturant: Decodable {

@@ -37,7 +37,7 @@ class ResturantsViewModel {
         self.service.fetchDecodableData(url: NetworkURLs.lunchData.url) { [weak self] (result: Result<ResturantWrapper, Error>) in
             switch result {
             case .success(let res):
-                self?.resturants = res.resturants
+                self?.resturants = res.restaurants
             case .failure(let err):
                 self?.errorHandler?(err)
             }
@@ -52,5 +52,10 @@ class ResturantsViewModel {
     func allLongitudes() -> [Double] {
         var longitudes: [Double] = []
         return longitudes
+    }
+    
+    func resturantDetailViewModel(for index: Int) -> ResturantDetailViewModel? {
+        guard index < self.resturants.count else { return nil }
+        return ResturantDetailViewModel(resturant: self.resturants[index], service: self.service)
     }
 }
