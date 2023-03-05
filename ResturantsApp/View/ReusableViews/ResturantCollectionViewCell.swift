@@ -35,6 +35,15 @@ class ResturantCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    private lazy var gradiant: CAGradientLayer = {
+        let gradiant = CAGradientLayer()
+        gradiant.startPoint = CGPoint(x: 0.5, y: 0.5)
+        gradiant.endPoint = CGPoint(x: 0.5, y: 1)
+        gradiant.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        self.resturantImageView.layer.addSublayer(gradiant)
+        return gradiant
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setUpUI()
@@ -42,6 +51,11 @@ class ResturantCollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.gradiant.frame = self.contentView.layer.frame
     }
     
     private func setUpUI() {
