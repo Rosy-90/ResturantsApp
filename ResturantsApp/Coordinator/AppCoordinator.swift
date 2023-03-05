@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppCoordinator: NSObject, UINavigationControllerDelegate {
+class AppCoordinator: NSObject {
     
     private let tabController: UITabBarController
     private let resturantNavController: UINavigationController
@@ -41,5 +41,11 @@ class AppCoordinator: NSObject, UINavigationControllerDelegate {
         UITabBar.appearance().barTintColor = UIColor.tabBarColor
         UITabBar.appearance().tintColor = UIColor.white
     }
-    
+}
+
+extension AppCoordinator: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        viewController.navigationItem.title = "Lunch Time"
+        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.avenirBold(for: 17) as Any, NSAttributedString.Key.foregroundColor: UIColor.white]
+    }
 }
