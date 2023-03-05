@@ -28,7 +28,7 @@ class AppCoordinator: NSObject {
         self.resturantNavController.delegate = self
         self.resturantNavController.pushViewController(ResturantMainViewController(viewModel: self.mainVM), animated: false)
         self.resturantNavController.tabBarItem = UITabBarItem(title: "lunch", image: UIImage.tabLunch, selectedImage: UIImage.tabLunch?.withTintColor(UIColor.white))
-        //self.webNavController.pushViewController(WebViewController(), animated: false)
+        self.webNavController.pushViewController(WebViewController(), animated: false)
         self.webNavController.tabBarItem = UITabBarItem(title: "internets", image: UIImage.tabInternet, selectedImage: UIImage.tabInternet?.withTintColor(UIColor.white))
         self.tabController.viewControllers = [self.resturantNavController, self.webNavController]
         

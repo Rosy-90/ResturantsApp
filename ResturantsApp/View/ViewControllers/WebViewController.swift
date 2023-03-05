@@ -8,12 +8,13 @@
 import UIKit
 import WebKit
 
-class WebViewController: UINavigationController, WKNavigationDelegate {
+class WebViewController: UIViewController, WKNavigationDelegate {
     
     private lazy var webView: WKWebView = {
         let webView = WKWebView(frame: .zero)
         webView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(webView)
+        webView.boundToSuperView()
         webView.navigationDelegate = self
         return webView
     }()
