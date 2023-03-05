@@ -62,6 +62,14 @@ class ResturantCollectionViewCell: UICollectionViewCell {
         self.resturantNameLabel.attributedText = NSAttributedString(string: viewModel.name, attributes: nameAttributes)
         let categoryAttributes = [NSAttributedString.Key.font: UIFont.avenirBold(for: 12) as Any, NSAttributedString.Key.foregroundColor: UIColor.white]
         self.resturantCategoryLabel.attributedText = NSAttributedString(string: viewModel.category, attributes: categoryAttributes)
-        
+        viewModel.imageData { [weak self] (data) in
+            if let data = data, let image = UIImage(data: data), let self = self {
+                DispatchQueue.main.async {
+                    self.resturantImageView.image = image
+                    self.contentView.bringSubviewToFront(self.resturantNameLabel)
+                    self.contentView.bringSubviewToFront(self.resturantCategoryLabel)
+                }
+            }
+        }
     }
 }

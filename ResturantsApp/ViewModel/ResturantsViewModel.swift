@@ -12,7 +12,7 @@ class ResturantsViewModel {
     private var updateHandler: (() -> Void)?
     private var errorHandler: ((Error) -> Void)?
     
-    private var resturants: [Resturant] = [] {
+    private var resturants: [Restaurant] = [] {
         didSet {
             self.updateHandler?()
         }
